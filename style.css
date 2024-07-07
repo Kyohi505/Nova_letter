@@ -352,12 +352,19 @@ body {
 /* Mobile optimization */
 @media only screen and (max-width: 600px) {
   .letter-enlarged {
-    height: 80vh; /* Increase the height to prioritize it */
+    position: fixed;
+    top: 50%;
+    left: 50%;
     width: auto; /* Let the width adjust automatically */
-    max-width: 90vw; /* Ensure it fits within the viewport width */
+    height: 85vh; /* Increase the height to prioritize it */
+    max-width: 80vw; /* Ensure it fits within the viewport width */
     transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: var(--primary);
+    padding: 20px; /* Adjust padding for better readability */
     overflow-y: auto; /* Ensure content is scrollable */
-    padding: 20px; /* Add padding for better readability */
+    cursor: default;
+    transition: transform 0.3s ease-in-out;
   }
 
   .envelope {
