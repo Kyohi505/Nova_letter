@@ -352,7 +352,7 @@ body {
 /* Mobile optimization */
 @media only screen and (max-width: 600px) {
   .letter-enlarged {
-    width: 70vw; /* Narrower width for portrait mode */
+    width: 85vw; /* Narrower width for portrait mode */
     height: auto; /* Let the height adjust automatically */
     max-height: 80vh; /* Limit height */
     transform: translate(-50%, -50%);
