@@ -352,10 +352,12 @@ body {
 /* Mobile optimization */
 @media only screen and (max-width: 600px) {
   .letter-enlarged {
-    width: 85vw; /* Narrower width for portrait mode */
-    height: auto; /* Let the height adjust automatically */
-    max-height: 80vh; /* Limit height */
+    height: 80vh; /* Increase the height to prioritize it */
+    width: auto; /* Let the width adjust automatically */
+    max-width: 90vw; /* Ensure it fits within the viewport width */
     transform: translate(-50%, -50%);
+    overflow-y: auto; /* Ensure content is scrollable */
+    padding: 20px; /* Add padding for better readability */
   }
 
   .envelope {
